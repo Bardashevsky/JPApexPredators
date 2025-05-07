@@ -47,7 +47,7 @@ struct ContentView: View {
             }
             .navigationTitle("Apex Predators")
             .searchable(text: $viewModel.searchText)
-            .toolbarBackground(Color.white, for: .navigationBar)
+            .autocorrectionDisabled()
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {

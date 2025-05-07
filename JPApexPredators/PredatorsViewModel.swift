@@ -40,7 +40,7 @@ class PredatorsViewModel: ObservableObject {
     func search(text: String) {
         if !text.isEmpty {
             filteredPredators = originPredators.filter {
-                $0.name.localizedStandardContains(text) && $0.type == selectedType
+                $0.name.localizedStandardContains(text) && ($0.type == selectedType || selectedType == .all)
             }
         } else {
             filter(by: selectedType)
