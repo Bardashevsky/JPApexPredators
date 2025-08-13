@@ -8,6 +8,8 @@
 import SwiftUI
 import MapKit
 
+//TEST CHANGES
+
 struct ApexPredatorModel: Decodable, Identifiable {
     
     enum APType: String, Decodable, CaseIterable, Identifiable {
